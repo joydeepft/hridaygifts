@@ -2,49 +2,26 @@ backend:
   name: git-gateway
   branch: main   # change to master if your repo uses master
 
-media_folder: "images/uploads"    # where product images go in repo
-public_folder: "/images/uploads"  # how site accesses them
+media_folder: "images/uploads"   # where product images go in repo
+public_folder: "/images/uploads" # how site accesses them
 
 collections:
   - name: "products"
     label: "Products"
-    file: "data.js"     # CMS will edit your data.js file
+    file: "data.js"   # CMS will edit your data.js file
     fields:
       - label: "Products"
         name: "products"
         widget: "list"
         allow_add: true
         fields:
-          - label: "ID"
-            name: "id"
-            widget: "string"
-
-          - label: "Category"
-            name: "category"
-            widget: "select"
-            options: ["perfume", "makeup", "handbag", "goldpolish", "sakha", "toys", "new"]
-
-          - label: "Name"
-            name: "name"
-            widget: "string"
-
-          - label: "Price"
-            name: "price"
-            widget: "string"
-
+          - { label: "ID", name: "id", widget: "string" }
+          - { label: "Category", name: "category", widget: "select", options: ["perfume", "makeup", "handbag", "goldpolish", "sakha", "toys", "new"] }
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Price", name: "price", widget: "string" }
           - label: "Images"
             name: "images"
             widget: "list"
-            field:
-              label: "Image"
-              name: "image"
-              widget: "image"
-
-          - label: "Description"
-            name: "description"
-            widget: "text"
-
-          - label: "Keywords"
-            name: "keywords"
-            widget: "list"
-            default: []
+            field: { label: "Image", name: "image", widget: "image" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Keywords", name: "keywords", widget: "list", default: [] }
