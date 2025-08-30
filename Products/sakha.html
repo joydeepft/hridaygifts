@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Ecommerce Website that sells new arrival products in Agartala, Tripura">
+    <title>Hriday gifts and Stationary</title>
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+            <div class="nav_title">
+                <img src="/images/logo.png" width="50px" alt="logo">
+                <h1>Hriday gifts and stationary</h1>
+            </div>
+            <div class="li_nav">
+                <a href="/index.html">Home</a>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar_title">
+                <div class="menu" onclick="showSidebar()">
+                    <img src="/images/open_sidebar.svg" alt="sidebar">
+                </div>
+                <img src="/images/logo.png" alt="logo">
+                <h1>Hriday gifts and stationary</h1>
+            </div>
+            <div class="main_sidebar">
+                <ul>
+                    <li onclick="hideSidebar()" class="i3"><img src="/images/close_sidebar.svg" alt="close"></li>
+                    <hr>
+                    <li><a href="/index.html">Home</a></li>
+                    <hr>
+                    <li><a href="/Products/perfume.html">Perfume</a></li>
+                    <hr>
+                    <li><a href="/Products/makeup.html">Makeup Items</a></li>
+                    <hr>
+                    <li><a href="/Products/handbag.html">Hand Bags</a></li>
+                    <hr>
+                    <li><a href="/Products/goldpolish.html">Gold Polish</a></li>
+                    <hr>
+                    <li><a href="/Products/sakha.html">Sakha Pola</a></li>
+                    <hr>
+                    <li><a href="/Products/toys.html">Toys</a></li>
+                    <hr>
+                    <li><a href="/Products/new.html">New Arrivals</a></li>
+                    <hr>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Grid -->
+    <main class="main" id="productGrid"></main>
+
+    <!-- Single Product View -->
+    <section id="singleProduct" class="hidden">
+        <div id="productDetails"></div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="/data.js"></script>
+    <script src="/script.js"></script>
+    <script>
+        renderProducts(products, "sakha");  // 👈 must match category in data.js
+    </script>
+</body>
+
+</html>
