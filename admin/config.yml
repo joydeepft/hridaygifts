@@ -15,13 +15,36 @@ collections:
         widget: "list"
         allow_add: true
         fields:
-          - { label: "ID", name: "id", widget: "string" }
-          - { label: "Category", name: "category", widget: "select", options: ["perfume", "makeup", "handbag", "goldpolish", "sakha", "toys", "new"] }
-          - { label: "Name", name: "name", widget: "string" }
-          - { label: "Price", name: "price", widget: "string" }
+          - label: "ID"
+            name: "id"
+            widget: "string"
+
+          - label: "Category"
+            name: "category"
+            widget: "select"
+            options: ["perfume", "makeup", "handbag", "goldpolish", "sakha", "toys", "new"]
+
+          - label: "Name"
+            name: "name"
+            widget: "string"
+
+          - label: "Price"
+            name: "price"
+            widget: "string"
+
           - label: "Images"
             name: "images"
             widget: "list"
-            field: { label: "Image", name: "image", widget: "image" }
-          - { label: "Description", name: "description", widget: "text" }
-          - { label: "Keywords", name: "keywords", widget: "list", default: [] }
+            field:
+              label: "Image"
+              name: "image"
+              widget: "image"
+
+          - label: "Description"
+            name: "description"
+            widget: "text"
+
+          - label: "Keywords"
+            name: "keywords"
+            widget: "list"
+            default: []
