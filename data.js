@@ -61,13 +61,13 @@ const products = [
   },
   // Toys
   {
-    id: "toy1",
-    category: "toys",
-    name: "Stainless Steel We",
-    price: "996₹",
-    images: ["/images/btl5.jpg"],
-    description: "cfgchbv",
-    keywords: ["toy", "steel", "kids"]
+    // id: "toy1",
+    // category: "toys",
+    // name: "Stainless Steel We",
+    // price: "996₹",
+    // images: ["/images/btl5.jpg"],
+    // description: "cfgchbv",
+    // keywords: ["toy", "steel", "kids"]
   },
   // Makeup Items - makeup
   {
